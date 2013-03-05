@@ -12,6 +12,9 @@ gem 'pg'
 #to a more robust webserver. We recommend Thin.
 gem 'thin'
 
+#deployment tool 
+gem "capistrano", :group => :development
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
