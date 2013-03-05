@@ -7,6 +7,10 @@ gem 'rails', '3.2.12'
 
 gem 'pg'
 
+#By default, your app’s web process runs rails server, which uses Webrick. 
+#This is fine for testing, but for production apps you’ll want to switch 
+#to a more robust webserver. We recommend Thin.
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.
