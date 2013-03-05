@@ -1,16 +1,26 @@
-common: &common
-  adapter: postgresql
-  username: myapp
-  password: password # from psql setup, see Postgresql
-
 development:
-  <<: *common
-  database: myapp_development
+  adapter: postgresql
+  encoding: unicode
+  database: jamesmk_dev
+  pool: 5
+  # username: theonlyjames
+  # password: h1pch3K3rb0ard_
+  # host: localhost
 
 test:
-  <<: *common
-  database: myapp_test
+  adapter: postgresql
+  encoding: unicode
+  database: jamesmk_test
+  pool: 5
+  # username: theonlyjames
+  # password: h1pch3K3rb0ard_
+  # host: localhost
 
 production:
-  <<: *common
-  database: myapp_production
+  adapter: postgresql
+  encoding: unicode
+  database: jamesmk_live
+  pool: 5
+  # username: theonlyjames
+  # password: h1pch3K3rb0ard_
+  # host: http://jamesmk-rails.herokuapp.com
