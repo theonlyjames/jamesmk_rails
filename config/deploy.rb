@@ -15,7 +15,7 @@ set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, :git
-set :repository, "ssh://github.com/theonlyjames/jamesmk_rails.git" 
+set :repository, "github.com/theonlyjames/jamesmk_rails.git" 
 set :branch, "master" 
 
 set :user, "fouseenm" 
