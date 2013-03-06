@@ -10,7 +10,7 @@ role :web, "jamesmk.com"                          # Your HTTP server, Apache/etc
 role :app, "jamesmk.com"                          # This may be the same as your `Web` server
 role :db,  "jamesmk.com", :primary => true # This is where Rails migrations will run
 
-set :deploy_to, "/home3/fouseenm/rails/jamesmk.com" 
+set :deploy_to, "/home3/fouseenm/rails/jamesmkcom" 
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
@@ -23,7 +23,7 @@ set :user, "fouseenm"
 after "deploy:update_code" do
   run "ln -s #{shared_path}/database.yml #{release_path}/config/database.yml" 
   run "rm -rf /home3/fouseenm/public_html/jamesmkcom" 
-  run "ln -s #{release_path}/public /home3/fouseenm/public_html/jamesmkcom" 
+  run "ln -s #{release_path}/app/views/welcome /home3/fouseenm/public_html/jamesmkcom" 
   #run "cd #{release_path} ; RAILS_ENV=production bundle exec rake assets:precompile --trace" 
 end
 
