@@ -128,7 +128,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass (~> 2.3.0.1)
+  bootstrap-sass
   capistrano
   coffee-rails (~> 3.2.1)
   jquery-rails
