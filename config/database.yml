@@ -1,33 +1,26 @@
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: jamesmk_dev
   pool: 5
-  timeout: 5000
-
-# development:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: f3_development
-#   pool: 5
-#   username: f3
-#   password: 
+  # username: theonlyjames
+  # password: h1pch3K3rb0ard_
+  # host: localhost
 
 test:
-  adapter: sqlite3
-  database: db/test.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: jamesmk_test
   pool: 5
-  timeout: 5000
-
-# test:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: f3
-#   pool: 5
-#   username: f3
-#   password: 
+  # username: theonlyjames
+  # password: h1pch3K3rb0ard_
+  # host: localhost
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: f3
+  database: jamesmk_live
   pool: 5
+  # username: theonlyjames
+  # password: h1pch3K3rb0ard_
+  # host: http://jamesmk-rails.herokuapp.com
