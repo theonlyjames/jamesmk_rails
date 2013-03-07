@@ -6,7 +6,11 @@
  */
 
   WebFontConfig = {
-    google: { families: [ 'Dosis:400,700:latin', 'Bitter:400,400italic,700:latin' ] }
+      google: { families: [ 'Dosis:400,700:latin', 'Bitter:400,400italic,700:latin' ] 
+    },
+      active: function() {
+      $("h1").removeClass("font-hide");
+    }
   };
   (function() {
     var wf = document.createElement('script');

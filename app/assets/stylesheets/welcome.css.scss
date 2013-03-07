@@ -1,15 +1,25 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.wf-loading, 
+.wf-bitter-n7-loading, 
+.wf-dosis-n4-loading, 
+.wf-dosis-n7-loading, 
+.wf-bitter-n4-loading, 
+.wf-bitter-i4-loading {
+	visibility:hidden;
+}
+body {display: none;}
+
 @import "bootstrap";
 body {
 	padding-top: 40px;
 }
 @import "bootstrap-responsive";
-body {display: none;}
+
 
 header.wrap {
 	width: 100%;
 
-	h1 {font-family: Dosis; display: block;position:relative; line-height: 0.8em; margin: 0;}
+	h1 {font-family: Dosis; position:relative; line-height: 0.8em; margin-top: 0;text-align:center;}
 }

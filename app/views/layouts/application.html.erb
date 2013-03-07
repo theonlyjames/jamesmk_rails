@@ -9,9 +9,13 @@
     <title>James Khatiblou | Web Design Development | Techy | Brogrammer</title>
     <meta name="description" content="">
     <meta name="author" content="">
+    <%= javascript_include_tag "gadgetfont" %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
+  <style>
+    h1.font-hide {visibility: hidden;}
+  </style>
 </head>
 <body>
 <div class="navbar navbar-fixed-top">
@@ -47,6 +51,8 @@ $("h1").fitText(0.4);
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 </script>
 </body>
 </html>
