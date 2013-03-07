@@ -7,12 +7,9 @@ body {
 }
 @import "bootstrap-responsive";
 body {display: none;}
+
 header.wrap {
 	width: 100%;
 
-	h1 {font-family: Dosis; display: block;position:relative; line-height: 0.8em;}
-}
-
-.span12 {
-	position: absolute;
+	h1 {font-family: Dosis; display: block;position:relative; line-height: 0.8em; margin: 0;}
 }
