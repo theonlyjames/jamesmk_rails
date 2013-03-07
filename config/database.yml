@@ -3,24 +3,15 @@ development:
   encoding: unicode
   database: jamesmk_dev
   pool: 5
-  # username: theonlyjames
-  # password: h1pch3K3rb0ard_
-  # host: localhost
+  username: james
+  password: 
+  host: localhost
 
 test:
   adapter: postgresql
   encoding: unicode
   database: jamesmk_test
   pool: 5
-  # username: theonlyjames
-  # password: h1pch3K3rb0ard_
-  # host: localhost
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: jamesmk_live
-  pool: 5
-  # username: theonlyjames
-  # password: h1pch3K3rb0ard_
-  # host: http://jamesmk-rails.herokuapp.com
+  username: james
+  password: 
+  host: localhost
