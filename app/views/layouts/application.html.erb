@@ -10,21 +10,31 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <%= javascript_include_tag "application" %>    
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="container">
-		<div class="span12">
-			<%= yield %>
-		</div>
-	</div>
-    <script>
-        var _gaq=[['_setAccount','UA-27665191-1'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+<div class="nav">
+<div class="nav-inner container">
+Navigation
+</div>
+</div>
+<div class="page">
+    <div class="container">
+        <div class="span12">
+            <%= yield %>
+        </div>
+    </div>
+</div>
+<%= javascript_include_tag "application" %>
+<script>
+$("h1").fitText(0.4);
+</script>
+<script>
+    var _gaq=[['_setAccount','UA-27665191-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 </body>
 </html>
