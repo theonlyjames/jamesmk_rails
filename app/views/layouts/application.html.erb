@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico">
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -21,11 +22,6 @@
 		</div>
 		<div class="btn">james</span>
 	</div>
-    <%= javascript_include_tag "application" %>
-    <%= javascript_include_tag "plugins" %>
-    <script>
-        $("h1").fitText(0.8);
-    </script>
     <script>
         var _gaq=[['_setAccount','UA-27665191-1'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
