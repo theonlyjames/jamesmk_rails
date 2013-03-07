@@ -5,7 +5,9 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'sqlite3'
+# gem 'pg'
+gem 'taps'
 
 #By default, your app’s web process runs rails server, which uses Webrick. 
 #This is fine for testing, but for production apps you’ll want to switch 
