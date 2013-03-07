@@ -31,7 +31,10 @@
 // MEDIA QUERIES
 // ------------------
 
-// Tablets to regular desktopss
+// Large desktops
+//@import "bootstrap/responsive-1200px-min";
+
+// Tablets to regular desktops
 @import "bootstrap/responsive-768px-979px";
 
 // Phones to portrait tablets and narrow desktops
