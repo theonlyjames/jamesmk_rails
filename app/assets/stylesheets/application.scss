@@ -7,7 +7,18 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
  */
+
+@import "bootstrap/bootstrap";
+body {
+	padding-top: 40px;
+}
+@import "bootstrap/responsive";
+body {display: none;}
+
+header.wrap {
+	width: 100%;
+	display: block;
+
+	h1 {font-family: Dosis; display: block;position:relative; line-height: 0.8em; margin: 0; height: 100%;}
+}

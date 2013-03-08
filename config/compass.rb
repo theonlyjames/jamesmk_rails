@@ -1,33 +1,6 @@
-# project_type = :rails
-# project_path = Compass::AppIntegration::Rails.root
-
-# http_path = "/"
-
-# environment = Compass::AppIntegration::Rails.env
-# if environment == 'production'
-#   css_dir = "tmp/stylesheets"
-#   sass_dir = "app/assets/stylesheets"
-# else
-#   css_dir = "public/stylesheets"
-#   sass_dir = "app/stylesheets"
-# end
-# Then modify 'config/initializers/compass.rb':
-
-# require 'compass'
-# require 'compass/app_integration/rails'
-# Compass::AppIntegration::Rails.initialize!
-
-# require 'fileutils'
-# FileUtils.mkdir_p(Rails.root.join("tmp", "stylesheets"))
-
-# environment = Compass::AppIntegration::Rails.env
-# if environment == 'production'
-#   Compass::AppIntegration::Rails.initialize!
-
-#   Rails.configuration.middleware.delete('Sass::Plugin::Rack')
-#   Rails.configuration.middleware.insert_before('Rack::Sendfile', 'Sass::Plugin::Rack')
-
-#   Rails.configuration.middleware.insert_before('Rack::Sendfile', 'Rack::Static',
-#       :urls => ['/stylesheets'],
-#       :root => "#{Rails.root}/tmp")
-# end
+# config/compass.rb
+#We use our css3-foundation project, which organizes scss files into subdirectories. 
+#Compass won’t allow us to load partial scss files from these directories unless we 
+#explicitly add them to the Compass load path.
+#http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+#additional_import_paths = ["app/assets/stylesheets/bootstrap", "app/assets/stylesheets"]
