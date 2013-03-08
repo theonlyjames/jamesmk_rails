@@ -69,6 +69,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.21)
+    modernizr-rails (2.6.2)
     multi_json (1.6.1)
     net-scp (1.1.0)
       net-ssh (>= 2.6.5)
@@ -148,6 +149,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass-rails (~> 1.0.0.rc.2)
   jquery-rails
+  modernizr-rails
   pg
   rails (= 3.2.12)
   rvm-capistrano

@@ -10,13 +10,13 @@
   // UNFIX THE TOPBAR
   // ----------------
   // Remove any padding from the body
-  body {
-    padding-top: 0;
-  }
+//  body {
+//    padding-top: 0;
+//  }
   // Unfix the navbars
   .navbar-fixed-top,
   .navbar-fixed-bottom {
-    position: static;
+    position: fixed;
   }
   .navbar-fixed-top {
     margin-bottom: $baseLineHeight;

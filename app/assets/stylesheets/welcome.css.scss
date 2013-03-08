@@ -1,3 +1,9 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+//welcome.css.scss
+body {display: none; }
+
+header.wrap {
+	
+	p {text-align: justify;}
+	h1 {font-family: Dosis; text-align: center;position:relative; line-height: 0.8em; margin-top: 0; height: 100%; }
+	a {display: inline-block;margin-bottom: 10px;}
+}
