@@ -14,11 +14,9 @@ body {
 	padding-top: 40px;
 }
 @import "bootstrap/responsive";
-body {display: none;}
+body {display: none; background-image: assets-path("gplaypattern.png") repeat; }
 
 header.wrap {
-	width: 100%;
-	display: block;
 
-	h1 {font-family: Dosis; display: block;position:relative; line-height: 0.8em; margin: 0; height: 100%;}
+	h1 {font-family: Dosis; text-align: center;position:relative; line-height: 0.8em; margin-top: 0; height: 100%;}
 }
