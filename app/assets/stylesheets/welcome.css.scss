@@ -3,12 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
 body {
-	padding-top: 60px;
+	padding-top: 40px;
 }
 @import "bootstrap-responsive";
+body {display: none;}
 
 header.wrap {
 	width: 100%;
 
-	h1 {display: block;}
+	h1 {font-family: Dosis; display: block;position:relative; line-height: 0.8em; margin: 0;}
 }
