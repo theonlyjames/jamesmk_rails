@@ -11,10 +11,12 @@
 
 @import "bootstrap/bootstrap";
 body {
+	background: url("gplaypattern.png") repeat;
 	padding-top: 40px;
 }
+.navbar {background-color: #fff;@include box-shadow(0 2px 3px rgba(0,0,0, 0.6)); }
 @import "bootstrap/responsive";
-body {display: none; background-image: assets-path("gplaypattern.png") repeat; }
+body {display: none; }
 
 header.wrap {
 

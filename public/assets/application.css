@@ -1756,7 +1756,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url(image-path("glyphicons-halflings.png"));
+  background-image: url("glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px; }
@@ -1779,7 +1779,7 @@ table th[class*="span"],
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
 .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url(image-path("glyphicons-halflings-white.png")); }
+  background-image: url("glyphicons-halflings-white.png"); }
 
 .icon-glass {
   background-position: 0 0; }
@@ -4855,7 +4855,14 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   box-sizing: border-box; }
 
 body {
+  background: url("gplaypattern.png") repeat;
   padding-top: 40px; }
+
+.navbar {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
 
 /*
  * Bootstrap Responsive v2.3.0
@@ -5526,8 +5533,7 @@ body {
     height: auto !important;
     overflow: visible !important; } }
 body {
-  display: none;
-  background-image: assets-path("gplaypattern.png") repeat; }
+  display: none; }
 
 header.wrap h1 {
   font-family: Dosis;
