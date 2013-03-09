@@ -50,7 +50,7 @@
   float: left;
   display: block;
   // Vertically center the text given $navbarHeight
-  padding: (($navbarHeight - $baseLineHeight) / 2) 20px (($navbarHeight - $baseLineHeight) / 2);
+  padding: (($navbarHeight - $baseLineHeight) / 1.5) 1em (($navbarHeight - $baseLineHeight) / 1.5);
   margin-left: -20px; // negative indent to left-align the text down the page
   font-size: 20px;
   font-weight: 200;
@@ -93,7 +93,7 @@
 // -------------------------
 .navbar .btn,
 .navbar .btn-group {
-  @include navbarVerticalAlign(30px); // Vertically center in navbar
+  @include navbarVerticalAlign($navbarHeight); // Vertically center in navbar
 }
 .navbar .btn-group .btn,
 .navbar .input-prepend .btn,
@@ -112,7 +112,7 @@
   select,
   .radio,
   .checkbox {
-    @include navbarVerticalAlign(30px); // Vertically center in navbar
+    @include navbarVerticalAlign($navbarHeight); // Vertically center in navbar
   }
   input,
   select,
@@ -140,7 +140,7 @@
 .navbar-search {
   position: relative;
   float: left;
-  @include navbarVerticalAlign(30px); // Vertically center in navbar
+  @include navbarVerticalAlign($navbarHeight); // Vertically center in navbar
   margin-bottom: 0;
   .search-query {
     margin-bottom: 0;
@@ -236,13 +236,14 @@
 }
 .navbar .nav > li {
   float: left;
+  line-height: $navbarHeight
 }
 
 // Links
 .navbar .nav > li > a {
   float: none;
   // Vertically center the text given $navbarHeight
-  padding: (($navbarHeight - $baseLineHeight) / 2) 15px (($navbarHeight - $baseLineHeight) / 2);
+  padding: (($navbarHeight - $baseLineHeight) / 2) 1em (($navbarHeight - $baseLineHeight) / 2);
   color: $navbarLinkColor;
   text-decoration: none;
   text-shadow: 0 1px 0 $navbarBackgroundHighlight;
