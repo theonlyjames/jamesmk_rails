@@ -56,9 +56,9 @@ $sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
-$baseFontSize:          12px !default;
+$baseFontSize:          14px !default;
 $baseFontFamily:        $sansFontFamily !default;
-$baseLineHeight:        1em !default;
+$baseLineHeight:        20px !default;
 $altFontFamily:         $serifFontFamily !default;
 
 $headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
@@ -78,7 +78,7 @@ $paddingLarge:          11px 19px !default; // 44px
 $paddingSmall:          2px 10px !default;  // 26px
 $paddingMini:           0px 6px !default;   // 22px
 
-$baseBorderRadius:      4px !default;
+$baseBorderRadius:      5px !default;
 $borderRadiusLarge:     6px !default;
 $borderRadiusSmall:     3px !default;
 
@@ -188,13 +188,13 @@ $wellBackground:                  #f5f5f5 !default;
 $navbarCollapseWidth:             700px !default;
 $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
 
-$navbarHeight:                    2em !default;
+$navbarHeight:                    50px !default;
 $navbarBackgroundHighlight:       #ffffff !default;
 $navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
 $navbarBorder:                    darken($navbarBackground, 12%) !default;
 
-$navbarText:                      #777 !default;
-$navbarLinkColor:                 #777 !default;
+$navbarText:                      #fff !default;
+$navbarLinkColor:                 #fff !default;
 $navbarLinkColorHover:            $grayDark !default;
 $navbarLinkColorActive:           $gray !default;
 $navbarLinkBackgroundHover:       transparent !default;

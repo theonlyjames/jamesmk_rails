@@ -16,43 +16,38 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="page container">
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
+<div class="top container">
+    <div id="topbar" class="navbar navbar-fixed-top">
             <div class="container">
-                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </button>
-                <a class="brand" href="./index.html">JamesMK.com</a>
-                <div class="nav-collapse collapse">
-                <ul class="nav">
-                    <li class="active"><a href="./index.html">Home</a></li>
-                    <li class=""><a href="./getting-started.html">Get started</a></li>
-                    <li class=""><a href="./scaffolding.html">Scaffolding</a></li>
-                </ul>
+                <div class="navbar-inner">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="/">JamesMK</a>
+                    <div class="nav-collapse in collapse">
+                    <ul class="nav pull-right">
+                        <li class=""><a href="#works">works</a></li>
+                        <li class=""><a href="#contact">contact</a></li>
+                    </ul>
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
-    <div class="row">
-        <div class="span12">
-            <%= yield %>
-        </div>
-    </div>
+</div>
+    <%= yield %>
 </div>
 <%= javascript_include_tag "application" %>
 <script>
 $("h1").fitText(0.69);
+$("h2").fitText(1);
 </script>
 <script>
     var _gaq=[['_setAccount','UA-27665191-1'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 </script>
 </body>
 </html>
