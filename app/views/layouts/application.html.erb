@@ -16,33 +16,35 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="./index.html">JamesMK.com</a>
-            <div class="nav-collapse collapse">
-            <ul class="nav">
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li class=""><a href="./getting-started.html">Get started</a></li>
-                <li class=""><a href="./scaffolding.html">Scaffolding</a></li>
-            </ul>
+<div class="page container">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="./index.html">JamesMK.com</a>
+                <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li class=""><a href="./getting-started.html">Get started</a></li>
+                    <li class=""><a href="./scaffolding.html">Scaffolding</a></li>
+                </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-    <div class="page container">
+    <div class="row">
         <div class="span12">
             <%= yield %>
         </div>
     </div>
+</div>
 <%= javascript_include_tag "application" %>
 <script>
-$("h1").fitText(0.42);
+$("h1").fitText(0.69);
 </script>
 <script>
     var _gaq=[['_setAccount','UA-27665191-1'],['_trackPageview']];

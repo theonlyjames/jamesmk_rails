@@ -7,7 +7,7 @@
 // -------------------------
 
 p {
-  font-size: 1.5em;
+  font-size: 1.6em;
   line-height: 1.5em;
   margin: 0 0 $baseLineHeight / 2;
 }
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,
 h2,
-h3 { line-height: $baseLineHeight + 0; }
+h3 { line-height: $baseLineHeight - 0; } // heading down to 1em
 
 h1 { font-size: $baseFontSize * 2.75; } // ~38px
 h2 { font-size: $baseFontSize * 2.25; } // ~32px

@@ -9,10 +9,10 @@
   @include grid-core($gridColumnWidth768, $gridGutterWidth768);
 
   // Fluid grid
-  @include grid-fluid($fluidGridColumnWidth768, $fluidGridGutterWidth768);
+  //@include grid-fluid($fluidGridColumnWidth768, $fluidGridGutterWidth768);
 
   // Input grid
-  @include grid-input($gridColumnWidth768, $gridGutterWidth768);
+  //@include grid-input($gridColumnWidth768, $gridGutterWidth768);
 
   // No need to reset .thumbnails here since it's the same $gridGutterWidth
 
