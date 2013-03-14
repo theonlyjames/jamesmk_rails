@@ -12,28 +12,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= stylesheet_link_tag    "welcome" %>
+  <%= stylesheet_link_tag    "plugins/fresco/fresco" %>
   <%= javascript_include_tag 'modernizr' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <div class="top container">
-    <div id="topbar" class="navbar navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-inner">
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="brand" href="/">JamesMK</a>
-                    <div class="nav-collapse in collapse">
-                    <ul class="nav pull-right">
-                        <li class=""><a href="#works">works</a></li>
-                        <li class=""><a href="#contact">contact</a></li>
-                    </ul>
-                    </div>
-                </div>
+    <div id="topbar" class="navbar navbar-static-top">
+        <div class="container">
+            <div class="navbar-inner">
+                <a class="brand" href="/">JamesMK</a>
+                <a accesskey="2" id="nav-open" class="jump-link" href="#nav"><span class="vishid">Jump to navigation</span></a>
             </div>
+        </div>
     </div>
 </div>
     <%= yield %>
@@ -42,6 +33,21 @@
 <script>
 $("h1").fitText(0.69);
 $("h2").fitText(1);
+</script>
+<script>
+$(document).ready(function() {
+  $('#rocklive-button').bind('click', function() {
+    Fresco.show([
+      'works/rocklive/rocklive-1.png',
+      'works/rocklive/rocklive-2.png',
+      'works/rocklive/rocklive-3.png',
+      'works/rocklive/rocklive-4.png',
+      'works/rocklive/rocklive-5.png'
+    ], {
+      ui: 'inside'
+    });
+  });
+});
 </script>
 <script>
     var _gaq=[['_setAccount','UA-27665191-1'],['_trackPageview']];

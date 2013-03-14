@@ -26,7 +26,7 @@
   }
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
-    padding: 5px;
+    //padding: 5px;
   }
   .navbar .container {
     width: auto;
@@ -162,6 +162,7 @@
   // Navbar button
   .navbar .btn-navbar {
     display: block;
+    margin-top: 10px;
   }
 
   // STATIC NAVBAR
