@@ -7,6 +7,16 @@ h1 {font-family: Dosis; text-align: center;position:relative; margin-top: 0; wor
 
 p {text-align: justify;}
 
+hr {
+	border: 0;
+	height: .75em;
+	background: #44A873;
+	display: block;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border-radius: .25em;
+}
 // animate
 
 #banner{
@@ -248,7 +258,24 @@ p {text-align: justify;}
 //@media only screen and (max-width:46em){#banner{overflow:hidden;padding-top:1em}#banner-lable{border-radius:0}}
 
 .my-works {
-	background-color: #C8FFE2;
+	.row-fluid a {
+		color: #777;
+		height: 100px;
+		overflow: hidden;
+		display: block;
+		float: left;
+		margin-left: 2.45%;
+		width: 14.6%;
+		border-bottom: 2px solid #777;
+
+		&:first-child {margin-left: 0;}
+
+		img {width: 100%; margin: auto; display: block;vertical-align: bottom;}
+	}
+
+	.row-fluid {
+		padding: 0.5em 0;
+	}
 }
 
 footer {
