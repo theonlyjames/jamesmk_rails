@@ -73,6 +73,8 @@ welcome.js: welcome-a7fa98ba2ef09a5dcc079d3f014a4e3c.js
 welcome/index.js: welcome-a7fa98ba2ef09a5dcc079d3f014a4e3c.js
 application.css: application-27a6a6e44d05e54e08528b2292c8edb2.css
 application/index.css: application-27a6a6e44d05e54e08528b2292c8edb2.css
+base.css: base-51682b0a43052a0ed6fe68a015fff23a.css
+base/index.css: base-51682b0a43052a0ed6fe68a015fff23a.css
 bootstrap/bootstrap.css: bootstrap/bootstrap-5c29e13096ba9263061150bcbe347682.css
 bootstrap/bootstrap/index.css: bootstrap/bootstrap-5c29e13096ba9263061150bcbe347682.css
 bootstrap/responsive.css: bootstrap/responsive-75fc9916c48fcfebddb1d3713b406860.css
