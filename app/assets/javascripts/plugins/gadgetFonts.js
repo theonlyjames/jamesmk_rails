@@ -6,7 +6,7 @@
  */
 
   WebFontConfig = {
-    google: { families: [ 'Dosis:400,700:latin', 'Bitter:400,400italic,700:latin' ] }
+    google: { families: [ 'Ubuntu:700:latin', 'Vollkorn:400:latin', 'Dosis:400,700:latin', 'Bitter:400,400italic,700:latin' ] }
   };
   (function() {
     var wf = document.createElement('script');

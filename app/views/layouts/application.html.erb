@@ -29,11 +29,13 @@
 </div>
     <%= yield %>
 </div>
+<script>
+$(".collapse").collapse();
+</script>
 <%= javascript_include_tag "application" %>
 <script>
-$("h1").fitText(0.69);
+$("h1").fitText(0.8);
 $("h2").fitText(1);
-$("#test").popover("toggle");
 </script>
 <script>
     var _gaq=[['_setAccount','UA-27665191-1'],['_trackPageview']];

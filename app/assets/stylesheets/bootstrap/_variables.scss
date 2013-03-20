@@ -36,6 +36,7 @@ $secondGreen: #A2C1B0;
 $thirdGreen: #44A873;
 $fourthGreen: #D6FFE9;
 $fifthGreen: #E1FFEF;
+$buttonGreen: #8ED3AE;
 
 
 // Scaffolding
@@ -46,14 +47,14 @@ $textColor:             $grayDark !default;
 
 // Links
 // -------------------------
-$linkColor:             #fff !default;
+$linkColor:             $blue !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
 // Typography
 // -------------------------
-$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$sansFontFamily:        Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serifFontFamily:       Vollkorn, Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          14px !default;
@@ -92,9 +93,9 @@ $tableBorder:                       #ddd !default; // table and cell border
 
 // Buttons
 // -------------------------
-$btnBackground:                     $white !default;
-$btnBackgroundHighlight:            darken($white, 10%) !default;
-$btnBorder:                         #ccc !default;
+$btnBackground:                     $buttonGreen !default; // changed $white !default;
+$btnBackgroundHighlight:            $buttonGreen !default; // changed darken($white, 10%) !default;
+$btnBorder:                         rgba(0,0,0,0) !default;
 
 $btnPrimaryBackground:              $linkColor !default;
 $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;

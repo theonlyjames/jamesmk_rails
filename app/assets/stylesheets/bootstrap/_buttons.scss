@@ -10,10 +10,12 @@
 .btn {
   display: inline-block;
   @include ie7-inline-block();
-  padding: 4px 12px;
+  padding: 8px 12px;
   margin-bottom: 0; // For input.btn
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -28,7 +30,7 @@
   // Hover/focus state
   &:hover,
   &:focus {
-    color: $grayDark;
+    color: $white;
     text-decoration: none;
     background-position: 0 -15px;
 
