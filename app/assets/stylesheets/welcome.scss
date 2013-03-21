@@ -40,7 +40,7 @@ body {position: relative;max-width:700px;margin:auto;}
 .container {max-width: 700px;}
 .navbar {background: transparent;padding: 0;}
 
-h1 {text-align: center;position:relative; margin-top: 0; word-wrap: break-word;display: block;}
+h1 {text-align: center;position:relative; word-wrap: break-word;display: block;}
 
 p {text-align: justify;}
 
@@ -54,9 +54,29 @@ hr {
 	padding: 0;
 	border-radius: .25em;
 }
+.half {
+	display: block;
+	width: 50%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	ul, h3 {
+		padding: 0 2em;
+	}
+
+	li {
+		font-size: 1.5em;
+	}
+}
+
+.left {margin-right: -1px; border-right: 1px solid rgba(0,0,0,0.1);}
+.right {padding-left: 0;}
 
 ul#links {
 	margin-left: 0;
+	margin-bottom: 0;
 
 	li {
 	display: inline-block;
@@ -95,13 +115,13 @@ ul#links {
 	position:relative;
 	display:inline-block;
 	width:50%;
-	max-width:300px;
+	max-width:350px;
 	margin:0 auto .8em;
 	background:url('copy/bg-shadow.png') no-repeat center bottom;
 	background-size:100%;
 	}
 #image-outlines img{
-	max-width:300px;
+	max-width:350px;
 	width:100%;
 	position:relative;
 	z-index:2;
@@ -110,7 +130,7 @@ ul#links {
 #banner-photo-1,#banner-photo-2{
 	width:100%;
 	height:100%;
-	max-width:300px;
+	max-width:350px;
 	display:block;
 	background-size:100%;
 	position:absolute;
@@ -153,6 +173,14 @@ ul#links {
 	-moz-transition: top 0 ease-in-out;
 	-o-transition: top 0 ease-in-out;
 	transition: top 0 ease-in-out;
+
+	li:first-child {
+		margin-top: .4em;
+	}
+
+	li:last-child {
+		margin-bottom: 0;
+	}
 
 	li, .home-link {
 		line-height: 2em;
@@ -282,6 +310,27 @@ ul#links {
 
 	.row-fluid {
 		padding: 0.5em 0;
+	}
+}
+
+#gal {
+	height: 60px;
+    overflow: hidden;
+}
+
+.contact {
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	ul li {
+		display: inline-block;
+
+		a {
+			font-size: 1.6em;
+			padding: 0 1em;
+			background-color: #fff;
+		}
 	}
 }
 
