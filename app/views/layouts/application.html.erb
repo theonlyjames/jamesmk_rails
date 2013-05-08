@@ -17,7 +17,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body data-spy="scroll" data-target="#nav" data-offset="50" class="scrollspy-example">
 <div class="top container">
     <div id="topbar" class="navbar navbar-static-top">
         <div class="container">
@@ -32,8 +32,22 @@
 </div>
 <%= javascript_include_tag "application" %>
 <script>
+$(document).ready(function(){
 $("h1").fitText(0.8);
 $("h2").fitText(1);
+
+$(function() {
+    $('body').scrollspy();
+        
+    $('#nav ul li a').bind('click', function(e) {
+        e.preventDefault();
+        target = this.hash;
+        console.log(target);
+        $.scrollTo(target, 1000);
+   });
+});
+
+});
 </script>
 <script>
     var _gaq=[['_setAccount','UA-27665191-1'],['_trackPageview']];
